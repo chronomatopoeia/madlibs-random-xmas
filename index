@@ -1,0 +1,139 @@
+
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <title> 
+        Random Christmas 
+    </title> 
+
+    <script language="javascript">
+        function MouseRollover(MyImage) {
+            MyImage.src = "2.jpg";
+        }
+        function MouseOut(MyImage) {
+            MyImage.src = "1.jpg";
+        }
+    </script>
+
+</head> 
+  
+<body style="text-align:center;" id="body"> 
+    <h1 style="color:green;">   
+            Random Christmas Wishes   
+        </h1> 
+    <p id="GFG_UP" style="font-size: 15px; font-weight: bold;"> 
+    </p> 
+    <button onclick="GFG_Fun(); "> 
+        click here 
+    </button> 
+    <br>
+    <br>
+            
+    <p id="GFG_DOWN_1" 
+       style="color:green; font-size: 20px; font-weight: bold;"> 
+        <p id="GFG_DOWN_2" 
+           style="color:green; font-size: 20px; font-weight: bold;"> 
+        </p> 
+        <script> 
+            var up = document.getElementById('GFG_UP'); 
+            up.innerHTML = 'Too rushed to make a card and write about your fabulous year? <br><br>Screenshot this image or the rollover, <br><br>then click the button, <br><br>answer the questions <br><br>and finally make a screenshot of the text and send it all to the seasonally afflicted.'; 
+            var down_1 = document.getElementById('GFG_DOWN_1'); 
+            var down_2 = document.getElementById('GFG_DOWN_2'); 
+
+
+
+
+
+            function GFG_Fun() { 
+                GFG_Fun_2(); 
+                GFG_Fun_3();
+                GFG_Fun_4();
+                GFG_Fun_5(); 
+                GFG_Fun_1();
+                document.getElementById("div").style.backgroundColor = "#456789";
+            } 
+  
+            function GFG_Fun_1() { 
+                var questions = 3;
+var questionsLeft = ' [' + questions + ' questions left]';
+var adjective = prompt('Please type an adjective' + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var verb = prompt('Please type a verb that does not end in -ing ' + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var noun = prompt('Please type a noun' + questionsLeft);
+alert('All done. Ready for the message?');
+
+var sentence = '<h1>If you turn over this ' + adjective;
+sentence += ' card, you can ' + verb;
+sentence += ' the personalized ' + noun + ' on the back.</h1>';
+document.write(sentence);
+                 
+            } 
+  
+            function GFG_Fun_2() { 
+                var things = ['I failed out of school.', 'My brother got into the eggnog.', 'I hear cowbells. It must be Christmas.', 'It seems like there was something... ohyeah.', 'Stalin called and said:', 'Did you forget what it is?', 'Aunt Gertrude is back in the asylum.', 'My younger sister won an international piano competition.', 'It is my birthday! Wait, no, it is Christmas.' ];
+        var thing = things[Math.floor(Math.random()*things.length)];
+        document.write('<h1>Hello there!<br> <br>This has been a great year.  ' + thing +'<h1> Yeet the yule!'); 
+            } 
+
+            function GFG_Fun_3() { 
+                var things = ['Rudolf finally flew the coop.', 'Ho, ho, ho!', 'Silver bells!', 'Me: I will have some Eggpog, thank you.', 'What the Christmas kind of card is this?' ];
+        var thing = things[Math.floor(Math.random()*things.length)];
+        document.write('<h1>Here is some Christmas cheer.  ' + thing +'<h1> At least hairstyling has become cheaper/non-existent.'); 
+            } 
+
+            function GFG_Fun_4() { 
+                var questions = 6;
+var questionsLeft = ' [' + questions + ' questions left]';
+var adjective = prompt('Please type an adjective' + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var verb = prompt('Please type a verb that does not end in -ing ' + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var noun = prompt('Please type a noun' + questionsLeft);
+
+var questionsLeft = ' [' + questions + ' questions left]';
+var coloradjective = prompt('Please type a color adjective' + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var ingverb = prompt('Please type a verb that does end in -ing ' + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var winternoun = prompt('Please type a winter-themed noun' + questionsLeft);
+
+alert('All done. Ready for the message?');
+
+var sentence = '<h1>I hope your year has been Covidastic too. What ' + adjective;
+sentence += ' plans we can ' + verb;
+sentence += ' for the next ' + noun + ' if things keep up!';
+sentence += ' We can see ' + coloradjective;
+sentence += ' through the ' + ingverb + ' year.';
+sentence += ' I wish you a very ' + adjective + winternoun + ' and lots of decorated cookies.</h1>';
+document.write(sentence);
+                 
+            } 
+
+            function GFG_Fun_5() { 
+                var things = ['Rudolf finally flew the coop.', 'Ho, ho, ho?', 'Silver bells?', 'Me: I will have some Eggpog, thank you.', 'What the Christmas kind of card is this?' ];
+        var thing = things[Math.floor(Math.random()*things.length)];
+        document.write('<h1>Oh what fun it is to ride in a Cybertruck.  ' + thing +'<h1> Laughing all the way.'); 
+        } 
+            
+        </script> 
+  
+  
+  <div align="center">
+    <!--The rollover image displays here.-->
+    <img src="1.jpg" border="0px" 
+    width="20%" height="20%" 
+    onMouseOver="MouseRollover(this)" 
+    onMouseOut="MouseOut(this)" />
+    </div>
+
+</body> 
+  
+</html> 
